@@ -38,6 +38,7 @@ header {
   .logo {
     height: 100px; /* Ajustez la taille du logo selon vos besoins */
   }
+}
   @media screen and (max-width: 1024px) {
   .Dofus {
     height: 100px; /* Ajustez la taille du logo selon vos besoins */
