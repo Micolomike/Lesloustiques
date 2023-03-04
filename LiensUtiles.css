@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+  --primary-color: #0099FF;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+  background-color: #000;
+}
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 10%;
+}
+.Dofus {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 10%;
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    height: 100px; /* Ajustez la taille du logo selon vos besoins */
+  }
+}
+  .Dofus {
+    height: 100px; /* Ajustez la taille du logo selon vos besoins */
+  }
+nav ul {
+  display:flex;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+nav li {
+  margin: 0 10px;
+  margin-right: 10px;
+  justify-content: center;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Boutons */
+button[type="submit"] {
+  display: inline-flexbox;
+  background-color: #FF5E3A;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+  padding: 12px 24px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #F44B2D;
+}
+  /* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-button {
+  background-color: #FF5E3A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #D24527;
+}
