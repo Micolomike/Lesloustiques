@@ -67,7 +67,7 @@ h1 {
 /* Boutons */
 button[type="submit"] {
   display: inline-flexbox;
-  background-color: #FF5E3A;
+  background-color: #7A7A7A;
   border: none;
   border-radius: 50px;
   color: white;
@@ -115,7 +115,7 @@ h2 {
     margin-left: 10px;
     }
     section:first-of-type {
-      background: linear-gradient(to bottom, #B1FF77, #76FFB2);
+      background: linear-gradient(to bottom, #E55700, #EB9764);
       background-color: #B1FF77;
       border-radius: 10px;
       margin: -5px;
@@ -126,7 +126,7 @@ h2 {
       margin-top: 50px;
     }
     section:nth-child(2) {
-      background-image: linear-gradient(to bottom, #77F9FF, #B6FBFF);
+      background-image: linear-gradient(to bottom, #7A7A7A, #D0D0D0);
       background-color: #77F9FF;
       border-radius: 10px;
       margin: -5px;
