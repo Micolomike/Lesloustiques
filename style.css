@@ -109,3 +109,8 @@ h2 {
     line-height: 1.5;
     color: #333;
   }
+  .date {
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+    }
