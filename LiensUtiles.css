@@ -118,3 +118,33 @@ input {
 .form-button:hover {
   background-color: #D24527;
 }
+.links-list img {
+  max-height: 200px;
+}
+.links-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.links-list li {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.links-list a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.links-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
