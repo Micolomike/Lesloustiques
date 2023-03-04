@@ -19,39 +19,49 @@ body {
 header {
   background-color: var(--primary-color);
   padding: 10px;
+  background-color: #000;
 }
-
+header img.logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 10%;
+}
 nav ul {
+  display:flex;
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-right: 10px;
 }
-
 nav li {
   margin: 0 10px;
+  margin-right: 10px;
+  justify-content: center;
 }
-
-/* Boutons */
-.button {
-  display: inline-block;
-  font-family: 'Accumin Pro', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0;
+h1 {
+  font-size: 36px;
   text-align: center;
-  text-transform: lowercase;
-  color: #FFFFFF;
-  background-color: #000000;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+/* Boutons */
+button[type="submit"] {
+  display: inline-flexbox;
+  background-color: #FF5E3A;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+  padding: 12px 24px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #FF0000;
-  color: #FFFFFF;
-}
+button[type="submit"]:hover {
+  background-color: #F44B2D;
+} 
 
 /* Main */
 main {
@@ -59,13 +69,6 @@ main {
   margin: 0 auto;
   padding: 20px;
 }
-
-h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 section {
   margin-bottom: 40px;
 }
@@ -87,12 +90,9 @@ h2 {
     color: #333;
   }
   
-  header {
-    background-color: #000;
-  }
-  #chat-container {
+#chat-container {
     border: 1px solid black;
-    position: fixed;
+    position: flex;
     bottom: 0;
     right: 0;
     background-color: #f1f1f1;
@@ -132,61 +132,28 @@ h2 {
     background-color: #3e8e41;
   }
   .gallery img {
-    display: inline-block;
-    width: 400px; /* Ajustez la largeur des images selon vos besoins */
+    display: none;
+    width: auto; /* Ajustez la largeur des images selon vos besoins */
     height: auto;
+    border-radius: 10px;
+  
+
+  
     
   }
-  button[type="submit"] {
-    background-color: #FF5E3A;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 12px 24px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #F44B2D;
-  }
-  .gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 2em;
-    padding: 0 1em;
-    cursor: pointer;
-    cursor: none; /* Supprime le curseur */
-  }
-  
+
   .gallery-nav:hover {
     background-color: #ccc;
     color: #fff;
   }
   .gallery {
     position: relative;
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap;
     font-size: 10; /* Supprime les espaces entre les images */
-  }
-  
-  .gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .gallery-nav-prev {
-    left: 10px;
-  }
-  
-  .gallery-nav-next {
-    right: 10px;
+    background-color: #FDAB5F;
+    border-radius: 10px;
+  } 
+  .gallery img.active {
+    display: block;
   }
