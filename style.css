@@ -44,6 +44,9 @@ header {
     height: 100px; /* Ajustez la taille du logo selon vos besoins */
   }
 }
+p {
+  text-align: justify;
+}
 nav ul {
   display:flex;
   list-style: none;
