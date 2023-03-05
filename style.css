@@ -63,6 +63,9 @@ h1 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Achafsex', sans-serif;
+  font-size:55px;
+  color: #E55700;
 }
 /* Boutons */
 button[type="submit"] {
@@ -139,3 +142,4 @@ h2 {
       bottom: 0;
       width: 100%;
     }
+
