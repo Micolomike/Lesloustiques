@@ -173,3 +173,39 @@ p {
 p {
   text-align: justify;
 }
+/*
+.links-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.links-list a:hover {
+  color: #FF5E3A;
+}*/
+.links-list li {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .links-list li:hover {
+  transform: translateY(-5px) rotate(2deg);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .links-list a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  }
+  
+  .links-list a:hover {
+  color: #FF5E3A;
+  }
